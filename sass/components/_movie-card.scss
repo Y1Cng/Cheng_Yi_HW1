@@ -1,0 +1,47 @@
+.review-card {
+  background-color: $color-bg-card;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: $spacing-md;
+  margin-top: $spacing-sm;
+
+  .movie-header {
+    margin-bottom: $spacing-sm;
+    border-bottom: 1px solid $color-text-light;
+    padding-bottom: $spacing-xs;
+  }
+
+  .review-rating {
+    color: $color-primary;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+  }
+
+  .movie-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+  }
+
+  .movie-poster {
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-description {
+    flex: 1;
+    min-width: 280px;
+  }
+}
+
+.empty-hint {
+  padding: $spacing-md * 2;
+  background-color: $color-bg-card;
+  border-radius: 6px;
+  text-align: center;
+  color: $color-text-light;
+  margin-top: $spacing-sm;
+}

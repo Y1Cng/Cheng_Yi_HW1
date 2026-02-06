@@ -1,1 +1,85 @@
 @use '../abstracts' as *;
+
+#character-box {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: $spacing-sm;
+    margin-bottom: $spacing-xs;
+    background-color: $color-bg-card;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #444;
+      border-left: 3px solid $color-primary;
+    }
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      font-weight: $font-weight-bold;
+      cursor: pointer;
+      display: block;
+      font-size: $font-size-base;
+    }
+  }
+}
+
+#review-con {
+  .empty-hint {
+    color: $color-text-gray;
+    padding: $spacing-md;
+    background-color: $color-bg-card;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: $spacing-xs;
+    font-size: $font-size-base;
+  }
+
+  .review-card {
+    background-color: $color-bg-card;
+    padding: $spacing-md;
+    border-radius: 6px;
+    margin-top: $spacing-xs;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-rating {
+    color: $color-primary;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    margin: $spacing-xs 0 $spacing-sm 0;
+    padding: 0;
+  }
+
+  .review-release {
+    color: $color-text-gray;
+    font-size: $font-size-base;
+    margin-bottom: $spacing-md;
+  }
+
+  .poster-box {
+    border-radius: 4px;
+    max-width: 280px;
+    margin: 0 0 $spacing-md 0;
+  }
+
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  .review-description {
+    color: $color-text-light;
+    line-height: 1.8;
+    font-weight: $font-weight-light;
+    font-size: $font-size-base;
+  }
+}
